@@ -1,0 +1,44 @@
+<div style="background-image:url(/assets/retina_wood.png)" class="container-fluid">
+	<div class="row">
+			<hr class="featurette-divider">
+			<div class="col-md-4">
+				<h6>CONTACTO</h6>
+				<hr>
+				<p><strong>Hotel Real del Lago</strong></p>
+				<p>Avenida de los deportes # 15 Colonia Adolfo Lopez Mateos<br>
+					Tlaxcala, Tlaxcala. CP 72000, Mexico
+				</p>
+				<p>Telefono: 01800 222 2222</p>
+				<p>Reservaciones: <a href="mailto:hrealdelago@hotmail.com">hrealdelago@hotmail.com</a><br></p>
+
+
+			</div>
+			<div class="col-md-4">
+				<h6>REDES SOCIALES</h6>
+				<hr>
+			</div>
+			<div class="col-md-4">
+	  			<h6>TWEETS</h6>
+	  			<hr>
+	  			<% @tweet_news.each do |tweet| %>
+					<div class="col-md-2"><%= image_tag('tweet.png') %></div>
+					<div class="col-md-10">
+	  					<p>
+	  						<%= link_to tweet.user.screen_name, "https://twitter.com/hrealdelago", target: "_blank" %>
+	  					</p>
+	  					<p>	
+	  						<%= tweet.text %> 
+	  					</p>
+	  				</div>
+  				<% end %>
+			</div>
+	</div>
+	<br>
+</div> 
+<div class="container-fluid" style="background-color:black">
+	<div class="row" >
+		<div class="col-md-10 col-md-offset-1">
+			<p class="lead" style="color:white">Desarrollado por <a style="" href="https://twitter.com/JulioAhuactzin" target="_blank">@JulioAhuactzin </a> <span class="pull-xs-right"><a href="#">Privacy</a> | <a href="#">Terms</a></span></p>
+		</div>
+	</div>
+</div>
