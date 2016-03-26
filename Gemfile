@@ -41,7 +41,6 @@ gem 'bootstrap-datepicker-rails'
 gem 'rb-readline'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'rails_serve_static_assets'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
