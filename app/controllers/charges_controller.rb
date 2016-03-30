@@ -4,7 +4,7 @@ class ChargesController < ApplicationController
 
   def create
   	begin
-  		byebug
+  		#byebug
 	  @charge = Conekta::Charge.create({
 	    "amount"=> 51000,
 	    "currency"=> "MXN",
