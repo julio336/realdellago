@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'charges/index'
+
+  post 'charges/create'
+
+  get 'charges/show'
+
   root 'static_pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -25,6 +25,9 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 gem 'rails-assets-tether', '>= 1.1.0'
 
+#use gem Conekta
+gem 'conekta'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'	
 
