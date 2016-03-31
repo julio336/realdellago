@@ -6,7 +6,7 @@ class ChargesController < ApplicationController
   	begin
   		#byebug
 	  @charge = Conekta::Charge.create({
-	    "amount"=> 51000,
+	    amount: 51000,
 	    "currency"=> "MXN",
 	    "description"=> "Pizza Delivery",
 	    "reference_id"=> "orden_de_id_interno",
