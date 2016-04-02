@@ -43,6 +43,8 @@ gem 'rb-readline'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
+
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'

@@ -31,7 +31,8 @@
 	  						<%= link_to tweet.user.screen_name, "https://twitter.com/hrealdelago", target: "_blank" %>
 	  					</p>
 	  					<p>	
-	  						<%= tweet.text %> 
+	  						<%= auto_link(tweet.text, :html => { :target => '_blank' }) %><br>
+	  						<small><%= localize(tweet.created_at, :format => :long) %> </small>
 	  					</p>
 	  				</div>
   				<% end %>
