@@ -1,9 +1,8 @@
 class ChangeDataTypeForFieldname < ActiveRecord::Migration
   def change
-	  change_column :rooms, :date_occupied, :date
-  	  change_column :rooms, :date_start, :date
-  	  change_column :rooms, :date_end, :date
-
+	  change_column :rooms, :date_occupied, "USING date_occupied::date"
+  	  change_column :rooms, :date_start, "USING date_start::date"
+  	  change_column :rooms, :date_end, "USING date_end::date"
   end
 
 
