@@ -1,0 +1,64 @@
+<div class="row">
+  <% if @room.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <h2 ><%= pluralize(@room.errors.count, "error") %> prohibieron que se guardara la habitación, por favor corrige:</h2>
+      <ul>
+        <% @room.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="col-md-4">
+    <%= form_for @room do |f| %>
+      <div class="field">
+        <%= f.label :status %><br>
+        <small>(True para disponible, False para no disponible.)</small><br>
+        <%= f.select(:status, ['true', 'false'], {}, { :class => 'c-select' }) %>
+      </div>
+      <br>
+      <div class="field">
+        <%= f.label :tipo_de_habitación %><br>
+        <%= f.select(:type, ['Sencilla', 'Doble', 'Premium'], {}, { :class => 'c-select' }) %>
+      </div>
+      <br>
+      <!--
+      <div class="field">
+        <%= f.label :fecha_ocupada %><br>
+        <%= f.date_select :date_occupied %>
+      </div>
+      <br> -->
+      <div class="field">
+        <%= f.label :precio %><br>
+        <%= f.number_field :price, placeholder: "$500" %>
+      </div>
+      <br>
+  </div>
+  <div class="col-md-4">
+      <div class="field">
+        <%= f.label :adultos %><br>
+        <%= f.number_field :adult %>
+      </div>
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+      <br>
+      <div class="field">
+        <%= f.label :niños %><br>
+        <%= f.number_field :kid %>
+      </div>
+      <!--
+      <div class="field">
+        <%= f.label :date_start %><br>
+        <%= f.date_select :date_start %>
+      </div>
+      <div class="field">
+        <%= f.label :date_end %><br>
+        <%= f.date_select :date_end %>
+      </div> 
+      <br>-->
+      <br>
+      <div class="actions">
+        <%= f.submit class: 'btn btn-primary btn-lg' %>
+      </div>
+    <% end %>
+  </div>
+</div>

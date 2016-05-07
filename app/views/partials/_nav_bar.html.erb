@@ -17,7 +17,17 @@
       <li class="nav-item">
          <a class="nav-link" href="#">CONTACTO</a>
        </li>
-       
+       <% if user_signed_in? %>
+         <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ADMIN</a>
+            <div class="dropdown-menu">
+              <strong class="dropdown-item"><%= current_user.email %></strong>
+              <%= link_to 'Admin', "/users/index", class:"dropdown-item" %>
+              <%= link_to 'Editar perfil', edit_user_registration_path, class:"dropdown-item" %>
+              <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% end %>
     </ul>
   </div>
 </nav>

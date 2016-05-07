@@ -10,6 +10,14 @@
 	  </div>
 	  <div class="form-row">
 	    <label>
+	      <span>Fechar de reserva</span>
+	      <input type="text" size="20" value="" id="start-date" name="start-date"/>
+	      <span>al </span>
+	      <input type="text" size="20" value="" id="end-date" name="end-date"/>
+	    </label>
+	  </div>
+	  <div class="form-row">
+	    <label>
 	      <span>Número de tarjeta de crédito</span>
 	      <input type="text" size="20" data-conekta="card[number]"/>
 	    </label>
@@ -27,6 +35,12 @@
 	    </label>
 	    <span>/</span>
 	    <input type="text" size="4" data-conekta="card[exp_year]"/>
+	  </div>
+	  <div class="form-row">
+	    <label>
+	      <h1><span>Total</span></h1>
+	      <input type="text" size="10" name="total"/>
+	    </label>
 	  </div>
 	  <button type="submit">¡Pagar ahora!</button>
 	<% end %>

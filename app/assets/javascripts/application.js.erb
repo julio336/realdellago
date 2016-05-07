@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require rails.validations
 //= require tether
 //= require bootstrap-sprockets
 //= require jquery_ujs
@@ -58,3 +59,26 @@ var conektaErrorResponseHandler = function(response) {
   $form.find(".card-errors").text(response.message);
   $form.find("button").prop("disabled", false);
 };
+
+
+$(window).load(function(){
+    queryString();
+});
+
+function queryString()
+{
+    var queryString = window.location.search;
+    var url = decodeURIComponent(queryString);
+    var varArray = url.split("&");
+    var paramStart = varArray[0].split("=");
+    var start = paramStart[1];
+    var paramEnd = varArray[1].split("=");
+    var end = paramEnd[1]
+    document.getElementById("start-date").value = paramStart[1];
+    var name = document.getElementsByName("start-date");
+    name.value = paramStart[1];
+    var name = document.getElementsByName("end-date");
+    name.value = paramEnd[1];
+    document.getElementById("end-date").value = paramEnd[1];
+        //parameter-value pair
+} 

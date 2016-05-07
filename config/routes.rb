@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
+  resources :rooms
+  devise_for :users
   get 'charges/index'
 
   post 'charges/create'
 
   get 'charges/show'
 
+  get 'users/index'
+
   root 'static_pages#home'
+
+  devise_scope :user do
+    get "admin", to: "devise/sessions#new"
+    get "registro", to: "devise/registrations#new"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

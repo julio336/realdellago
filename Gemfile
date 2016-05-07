@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
-# Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -27,6 +26,12 @@ gem 'rails-assets-tether', '>= 1.1.0'
 
 #use gem Conekta
 gem 'conekta'
+
+#gem devise to authenticate users
+gem 'devise'
+
+#gem client side validations
+gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'	

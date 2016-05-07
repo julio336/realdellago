@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="container">
+
+    <p>
+      <strong>Status:</strong>
+      <%= @room.status %>
+    </p>
+
+    <p>
+      <strong>Type:</strong>
+      <%= @room.type %>
+    </p>
+
+    <p>
+      <strong>Date occupied:</strong>
+      <%= @room.date_occupied %>
+    </p>
+
+    <p>
+      <strong>Price:</strong>
+      <%= @room.price %>
+    </p>
+
+    <p>
+      <strong>Adult:</strong>
+      <%= @room.adult %>
+    </p>
+
+    <p>
+      <strong>Kid:</strong>
+      <%= @room.kid %>
+    </p>
+
+    <p>
+      <strong>Date start:</strong>
+      <%= @room.date_start %>
+    </p>
+
+    <p>
+      <strong>Date end:</strong>
+      <%= @room.date_end %>
+    </p>
+
+    <%= link_to 'Edit', edit_room_path(@room) %> |
+    <%= link_to 'Back', rooms_path %>
+  </div>
+</div>

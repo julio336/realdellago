@@ -1,0 +1,36 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Administación de habitaciones</h1>
+    <p class="lead">Crea, actualiza o elimina las habitaciones del hotel.</p>
+    <%= link_to "Crear habitación", new_room_path, class: "btn btn-primary btn-lg" %>
+  </div>
+</div>	
+<div class="container">
+	<div class="row">
+		<% @rooms.each do |room| %>
+			<div class="col-md-4">
+				<div class="card">
+					<% if room.type == "Sencilla" %>
+						<%= image_tag ('room_sencilla') %>
+					<% elsif room.type == "Doble" %>
+						<%= image_tag ('room_doble') %>
+					<% end %>
+					<p class="card-text">Tipo: <%= room.type %></p>
+					<p class="card-text">Precio: $<%= room.price %></p>
+					<% if room.status == true %>
+						<div class="alert alert-success" role="alert">
+							<p class="card-text">Status de la habitación: Disponible</p>
+						</div>
+					<% else %>
+						<div class="alert alert-danger" role="alert">
+							<p class="card-text">Status de la habitación: No disponible</p>
+						</div>
+					<% end %>
+					<p class="card-text"><%= link_to 'Actualizar', edit_room_path(room) %> | 
+						<%= link_to 'Eliminar', room, method: :delete, data: { confirm: 'Are you sure?' } %>
+					</p>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>

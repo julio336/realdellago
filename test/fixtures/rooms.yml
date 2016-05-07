@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: false
+  type: 
+  date_occupied: 2016-04-14 21:23:10
+  price: 1
+  adult: MyString
+  kid: MyString
+  date_start: 2016-04-14 21:23:10
+  date_end: 2016-04-14 21:23:10
+
+two:
+  status: false
+  type: 
+  date_occupied: 2016-04-14 21:23:10
+  price: 1
+  adult: MyString
+  kid: MyString
+  date_start: 2016-04-14 21:23:10
+  date_end: 2016-04-14 21:23:10
