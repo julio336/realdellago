@@ -11,19 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160415042038) do
+ActiveRecord::Schema.define(version: 20160508162814) do
 
   create_table "rooms", force: :cascade do |t|
     t.boolean  "status"
     t.string   "type"
-    t.date     "date_occupied"
     t.integer  "price"
     t.string   "adult"
     t.string   "kid"
-    t.date     "date_start"
-    t.date     "date_end"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.datetime "order_date"
   end

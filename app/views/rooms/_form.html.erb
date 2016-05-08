@@ -22,13 +22,7 @@
         <%= f.select(:type, ['Sencilla', 'Doble', 'Premium'], {}, { :class => 'c-select' }) %>
       </div>
       <br>
-      <!--
-      <div class="field">
-        <%= f.label :fecha_ocupada %><br>
-        <%= f.date_select :date_occupied %>
-      </div>
-      <br> -->
-      <div class="field">
+        <div class="field">
         <%= f.label :precio %><br>
         <%= f.number_field :price, placeholder: "$500" %>
       </div>
@@ -37,24 +31,17 @@
   <div class="col-md-4">
       <div class="field">
         <%= f.label :adultos %><br>
+        <small>(Cantidad de adultos por habitación.)</small><br>
         <%= f.number_field :adult %>
       </div>
       <%= f.hidden_field :user_id, :value => current_user.id %>
       <br>
       <div class="field">
         <%= f.label :niños %><br>
+        <small>(Cantidad de niños por habitación.)</small><br>        
         <%= f.number_field :kid %>
       </div>
-      <!--
-      <div class="field">
-        <%= f.label :date_start %><br>
-        <%= f.date_select :date_start %>
-      </div>
-      <div class="field">
-        <%= f.label :date_end %><br>
-        <%= f.date_select :date_end %>
-      </div> 
-      <br>-->
+    
       <br>
       <div class="actions">
         <%= f.submit class: 'btn btn-primary btn-lg' %>

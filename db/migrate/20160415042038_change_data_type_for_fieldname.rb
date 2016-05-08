@@ -1,11 +1,11 @@
 class ChangeDataTypeForFieldname < ActiveRecord::Migration
-  def change
-	  change_column :rooms, :date_occupied, 'date USING CAST(date_occupied AS date)'
-  	  change_column :rooms, :date_start, 'date USING CAST(date_start AS date)'
-  	  change_column :rooms, :date_end, 'date USING CAST(date_end AS date)'
+  def self.up
+    change_table :rooms do |t|
+      t.change :date_occupied, :date
+      t.change :date_start, :date
+      t.change :date_end, :date
+    end
   end
-
-
   def self.down
     change_table :rooms do |t|
       t.change :date_occupied, :datetime
