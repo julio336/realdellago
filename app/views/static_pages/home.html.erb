@@ -2,89 +2,25 @@
 <br>
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
-          <h2>HOTEL REAL DEL LAGO</h2>
+		<div class="col-md-12">
+          <h2 style="text-align:center">HOTEL REAL DEL LAGO</h2>
           <hr>
-          <p>Ideal para estancias de placer o de negocios;ubicado en el corazón del Centro Histórico y a unos cuantos pasos del Centro de Convenciones, en la renombrada senda de la revolución, cercano a los principales sitios de interés como el barrio del artista, el Parían,Capilla del Rosario, entre otros. </p>
-          <h4>TIPOS DE HABITACIONES</h4>
-          <p><a>- Sencilla</a></p>
-          <p><a>- Doble</a></p>
-          <p><a>- Junior</a></p>
-          <p><a>- Ejecutiva</a></p>
-          <p><a>- Master</a></p>
-        </div>
-        
-        <div class="col-md-6">
-            	<h2 style="color:orange"class="display-4">Reserva en línea</h2>
-            	<p><em>El mejor precio garantizado.</em><br>
-            		<em>Email: <a href="mailto:hrealdelago@hotmail.com">hrealdelago@hotmail.com</a></em><br>
-            		<em>Telefono: 01800 222 2222 </em>
-            	</p>
-            	<form class="input-daterange input-group" method=get action="/charges/index">
-            	  <fieldset class="form-group" id="datepicker">
-				    <div class="col-xs-4">
-					    <label for="formGroupExampleInput">Fecha de entrada</label><br>
-				    	<input type="text" class="input-sm form-control" name="start" />
-				    </div>
-				    <div class="col-xs-2">
-				      	<a href="" id="dp-choose-date"></a>
-				    </div>
-				  </fieldset>
-				  <fieldset class="form-group">
-				    <div class="col-xs-4">
-				    	<label for="formGroupExampleInput2">Fecha de salida</label><br>
-				    	<input type="text" class="input-sm form-control" name="end" />
-				    </div>
-				    <div class="col-xs-2">
-				      	<a href="" id="dp-choose-date"></a>
-				    </div>
-				  </fieldset>
-				  <fieldset>
-				  	<div class="col-xs-4">
-				  		<button type="submit" class="btn btn-primary">Reservar</button>
-				  	</div>
-				  </fieldset>
-				  <fieldset>
-				  	<div class="col-xs-8">
-				  		<%= image_tag('payment.jpg', :class => "img-fluid") %>
-				  	</div>
-				  </fieldset>
-				  <br>
-				</form>
-        </div>
-	</div>
+          <p class="bd-content">Ideal para estancias de placer o de negocios;ubicado en el corazón del Centro Histórico y a unos cuantos pasos del Centro de Convenciones, en la renombrada senda de la revolución, cercano a los principales sitios de interés como el barrio del artista, el Parían,Capilla del Rosario, entre otros. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-md-offset-1">
+      <%= link_to image_tag("logo_punto_limpio", class: "img-fluid"), "http://www.calidad.sectur.gob.mx/puntolimpio/", target: "_blank" %>
+    </div>
+    <div class="col-md-3">
+      <%= link_to image_tag("logo_distintivo_m", class: "img-fluid"), "http://www.distintivom.net", target: "_blank" %>
+    </div>
+    <div class="col-md-3">
+      <%= link_to image_tag("logo_tlaxcala", class: "img-fluid", style: "margin-top:40%"), "http://turismotlaxcala.com/1/hotel/?i=38", target: "_blank" %>
+    </div>
+  </div>
 </div>
+<%= render "partials/habitaciones" %>
+<div class="span-divider"></div>
+<%= render "partials/servicios" %>
 
-<div class="container">
-		<hr class="featurette-divider">
-		<div class="row">
-	    	 <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-            </div><!--/span-->    
-	    
-      	</div>
-		
-</div>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-  	$('.input-daterange').datepicker({
-  		autoclose: true,
-    	todayHighlight: true
-	});
-  });
-
-
-</script>
