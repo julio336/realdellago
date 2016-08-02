@@ -4,23 +4,22 @@
 	<div class="row">
 		<div class="col-md-12">
           <h2 style="text-align:center">HOTEL REAL DEL LAGO</h2>
-          <hr>
+          <hr class="featurette-divider"> 
           <p class="bd-content">Ideal para estancias de placer o de negocios;ubicado en el corazón del Centro Histórico y a unos cuantos pasos del Centro de Convenciones, en la renombrada senda de la revolución, cercano a los principales sitios de interés como el barrio del artista, el Parían,Capilla del Rosario, entre otros. </p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-3 col-md-offset-1">
-      <%= link_to image_tag("logo_punto_limpio", class: "img-fluid"), "http://www.calidad.sectur.gob.mx/puntolimpio/", target: "_blank" %>
+    <div style="margin-left:13%" class="col-md-3 col-md-offset-1">
+      <%= link_to image_tag("logo_punto_limpio_", class: "img-responsive"), "http://www.calidad.sectur.gob.mx/puntolimpio/", target: "_blank" %>
     </div>
     <div class="col-md-3">
-      <%= link_to image_tag("logo_distintivo_m", class: "img-fluid"), "http://www.distintivom.net", target: "_blank" %>
+      <%= link_to image_tag("logo_distintivo_m", class: "img-responsive"), "http://www.distintivom.net", target: "_blank" %>
     </div>
     <div class="col-md-3">
-      <%= link_to image_tag("logo_tlaxcala", class: "img-fluid", style: "margin-top:40%"), "http://turismotlaxcala.com/1/hotel/?i=38", target: "_blank" %>
+      <%= link_to image_tag("logo_tlaxcala", class: "img-responsive", style: "margin-top:40%"), "http://turismotlaxcala.com/1/hotel/?i=38", target: "_blank" %>
     </div>
   </div>
 </div>
 <%= render "partials/habitaciones" %>
-<div class="span-divider"></div>
 <%= render "partials/servicios" %>
 

@@ -1,33 +1,42 @@
 <nav class="navbar navbar-static-top navbar-light bg-faded">
-   <%= link_to image_tag('/assets/logo.jpg', :width => 100), root_path, class: 'navbar-brand'%>
-   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-    &#9776;
-  </button>
-  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <ul class="nav navbar-nav pull-xs-right" style="margin-top:2%">
-      <li class="nav-item">
-        <a class="nav-link" href="#">RESTAURANTE & BAR </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">HABITACIONES</a>
-       </li>
-      <li class="nav-item">
-         <a class="nav-link" href="#">SERVICIOS</a>
-      </li>
-      <li class="nav-item">
-        <%= link_to "RESERVA AHORA", "#", class: "btn btn-danger" %>
-      </li>
-      <% if user_signed_in? %>
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ADMIN</a>
-          <div class="dropdown-menu">
-            <strong class="dropdown-item"><%= current_user.email %></strong>
-              <%= link_to 'Admin', "/users/index", class:"dropdown-item" %>
-              <%= link_to 'Editar perfil', edit_user_registration_path, class:"dropdown-item" %>
-              <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <%= link_to image_tag('/assets/logo.jpg', :width => 100), root_path, class: 'navbar-brand'%>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="margin-top:3%">
+        <li class="nav-item">
+          <a class="nav-link" href="#">RESTAURANTE & BAR </a>
         </li>
-      <% end %>
-    </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HABITACIONES</a>
+         </li>
+        <li class="nav-item">
+           <a class="nav-link" href="#">SERVICIOS</a>
+        </li>
+        <li class="nav-item">
+          <%= link_to "RESERVA AHORA", "#", class: "btn btn-danger" %>
+        </li>
+        <% if user_signed_in? %>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ADMIN</a>
+            <div class="dropdown-menu">
+              <strong class="dropdown-item"><%= current_user.email %></strong>
+                <%= link_to 'Admin', "/users/index", class:"dropdown-item" %>
+                <%= link_to 'Editar perfil', edit_user_registration_path, class:"dropdown-item" %>
+                <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </nav>

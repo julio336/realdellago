@@ -1,29 +1,29 @@
 <div style="background-image:url(/assets/retina_wood.png)" class="container-fluid">
 	<div class="container">
 		<div class="row">
-			<hr class="featurette-divider">
+			<div class="span-divider"></div>
 			<div class="col-md-4">
-				<h6>CONTACTO</h6>
+				<h4>CONTACTO</h4>
 				<hr>
 				<p><strong>Hotel Real del Lago</strong></p>
 				<p>Avenida de los deportes # 15 Colonia Adolfo López Mateos<br>
 					Tlaxcala, Tlaxcala. CP 90040.
 				</p>
 				<p>Teléfonos: (246) 462 0399 / (246) 462 9517</p>
-				<br>
  		        <a href="mailto:reservaciones@hotelrealdelago.com">reservaciones@hotelrealdelago.com</a><br>
+ 		        <br>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.5110973880517!2d-98.24517926682164!3d19.324843173462384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd91867f5e30b%3A0x6304df369b004465!2sHotel+Real+Del+Lago!5e0!3m2!1ses!2smx!4v1458962967743" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 			</div>
 			<div class="col-md-4">
-				<h6>REDES SOCIALES</h6>
+				<h4>REDES SOCIALES</h4>
 				<hr>
 				<div class="col-md-10">
-					<%= image_tag('http://growingsocialmedia.com/wp-content/uploads/2015/11/Social-Media-Logos-Group.png', class: "img-fluid") %>
+					<%= image_tag('http://growingsocialmedia.com/wp-content/uploads/2015/11/Social-Media-Logos-Group.png', class: "img-responsive") %>
 				</div>
 			</div>
 			<div class="col-md-4">
-	  			<h6>TWEETS</h6>
+	  			<h4>TWEETS</h4>
 	  			<hr>
 	  			<% @tweet_news.each do |tweet| %>
 					<div class="col-md-2"><%= image_tag('tweet.png') %></div>

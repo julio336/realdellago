@@ -1,0 +1,1 @@
+(function(){var n;n=function(n){var t;return t=$("#card-form"),t.append($('<input type="hidden" name="conektaTokenId" />').val(n.id)),t.get(0).submit()}}).call(this);
