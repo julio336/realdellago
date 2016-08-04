@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
       config.access_token_secret = "rZmPaE5VNVyMXxDT1fm6IAXoWsXo9AWAhFXPLe0SEaMF5"
     end
     @twitter_user = account
-    @tweet_news = client.user_timeline(@twitter_user, {count: 3})
+    @tweet_news = client.user_timeline(@twitter_user, {count: 2})
   end
 
 end
