@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   get 'terms', to: "static_pages#terms"
   get 'aviso', to: "static_pages#aviso"
+  get 'rooms', to: "static_pages#rooms"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

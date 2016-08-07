@@ -14,4 +14,7 @@ class StaticPagesController < ApplicationController
   def aviso
   end
 
+  def rooms
+  end
+
 end
