@@ -16,6 +16,9 @@ Rails.application.routes.draw do
     get "registro", to: "devise/registrations#new"
   end
 
+  get 'terms', to: "static_pages#terms"
+  get 'aviso', to: "static_pages#aviso"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

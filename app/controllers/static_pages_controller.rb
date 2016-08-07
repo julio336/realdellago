@@ -7,4 +7,11 @@ class StaticPagesController < ApplicationController
 
   def registro
   end
+
+  def terms
+  end
+
+  def aviso
+  end
+
 end

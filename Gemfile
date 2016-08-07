@@ -39,6 +39,9 @@ gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
 #twitter newsfeed
 gem 'twitter'
 
+#scroll to plugin
+gem "jquery-scrollto-rails"
+
 #datepicker
 gem 'bootstrap-datepicker-rails'
 

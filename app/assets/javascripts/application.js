@@ -21,6 +21,7 @@
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr.js
 //= require charges
+//= require jquery.scrollTo
 //= require_tree .
 
 $(document).on("page:load", function(){
@@ -63,6 +64,26 @@ var conektaErrorResponseHandler = function(response) {
 
 $(window).load(function(){
     queryString();
+});
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 600) {
+      $('.btn-circle').fadeIn();
+    } else {
+      $('.btn-circle').fadeOut();
+    }
+});
+  
+
+$(document).ready(function(){
+  $("#totop").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top
+    }, 1200);
+    return false;
+  });
+
 });
 
 function queryString()

@@ -25,6 +25,13 @@
       </button><%= flash[:notice] %></div>
   <% end %>
 	<%= yield %>
+  <div class="wow shake animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
+    <div class="page-scroll marginbot-30">
+      <a href="#intro" id="totop" class="btn btn-circle">
+        <span id="scroll_item" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
 	<%= render "partials/footer" %>
 </body>
 </html>

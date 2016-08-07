@@ -20,6 +20,77 @@ body {
     margin:0 !important;
 }
 
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    padding: 5px 5px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #000000;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    text-decoration: none;
+    position:fixed;
+    top:75px;
+    right:10px;
+    display:none;
+}
+
+.btn-circle:hover, .btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+    color: rgb(148, 69, 60);
+    text-decoration:none;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+.swing {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
 .link_contacto{
   text-decoration: none;
   line-height: inherit;
