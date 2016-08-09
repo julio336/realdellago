@@ -42,6 +42,9 @@ gem 'twitter'
 #scroll to plugin
 gem "jquery-scrollto-rails"
 
+#gallery plugin
+gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git'   
+
 #datepicker
 gem 'bootstrap-datepicker-rails'
 

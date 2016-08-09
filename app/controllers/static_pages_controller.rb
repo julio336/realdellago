@@ -14,7 +14,10 @@ class StaticPagesController < ApplicationController
   def aviso
   end
 
-  def rooms
+  def habitaciones
+  end
+
+  def restaurante
   end
 
 end

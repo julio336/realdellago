@@ -1,0 +1,115 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    	<div class="row">
+	    	<div class="col-md-7">
+	    		<h1 class="display-3">ESPADAS DO BRASIL</h1>
+	      		<h2 class="display-3">Restaurante & Bar</h2>
+	    	</div>
+	    </div>
+      </div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+    		<%= image_tag("logo_espadas.png", class: "img-responsive", style: "margin-top:3%") %>
+    		<hr style="border-top: 1px solid rgb(255, 255, 255);" class="featurette-divider">
+			<p class="lead">
+				Abierto de Martes a Domingo de 8:00 - 18:00 horas.
+			</p>
+			<p class="lead">
+				Contamos con desayunos tipo Buffet los días Viernes, Sábado y Domingo.
+			</p>
+			<p class="lead">
+				Servicio de bar contamos con bebidas nacionales e internacionales.
+			</p>
+		</div>
+		<div class="col-md-6">
+	      <h2 style="text-align:center">GALERÍA</h2>
+	      <ul style="list-style: circle;" id="lightGallery">
+	          <li id="gallery_list" data-src="assets/restaurante_1.jpg" class="col-md-6">
+	            <img src="assets/restaurante_1.jpg" class="img-responsive">
+	          </li>
+	          <li id="gallery_list" data-src="assets/restaurante_5.jpg" class="col-md-6">
+	            <img src="assets/restaurante_5.jpg" class="img-responsive">
+	          </li>
+	          <li id="gallery_list" data-src="assets/restaurante_2.jpg" class="col-md-6">
+	            <img src="assets/restaurante_2.jpg" class="img-responsive">
+	          </li>
+	           <li id="gallery_list" data-src="assets/restaurante_4.jpg" class="col-md-6">
+	            <img src="assets/restaurante_4.jpg" class="img-responsive">
+	          </li>
+	          <li id="gallery_list" data-src="assets/restaurante_3.jpg" class="col-md-6">
+	            <img src="assets/restaurante_3.jpg" class="img-responsive">
+	          </li>
+	          <li id="gallery_list" data-src="assets/espadas1.jpg" class="col-md-6">
+	            <img src="assets/espadas1.jpg" class="img-responsive">
+	          </li>
+	      </ul>
+	    </div>
+	</div>
+</div>
+<hr style="border-top: 1px solid rgb(255, 255, 255);" class="featurette-divider">
+
+<script type="text/javascript">
+      $(document).ready(function() {
+        $("#lightGallery").lightGallery({
+
+          mode: 'slide',
+          useCSS: true,
+          cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+          easing: 'linear', //'for jquery animation',//
+          speed: 600,
+          addClass: '',
+
+          closable: true,
+          loop: false,
+          auto: false,
+          pause: 4000,
+          escKey: true,
+          controls: true,
+          hideControlOnEnd: false,
+
+          preload: 1, //number of preload slides. will exicute only after the current slide is fully loaded. ex:// you clicked on 4th image and if preload = 1 then 3rd slide and 5th slide will be loaded in the background after the 4th slide is fully loaded.. if preload is 2 then 2nd 3rd 5th 6th slides will be preloaded.. ... ...
+          showAfterLoad: true,
+          selector: null,
+          index: false,
+
+          lang: {
+              allPhotos: 'All photos'
+          },
+          counter: false,
+
+          exThumbImage: false,
+          thumbnail: true,
+          showThumbByDefault:false,
+          animateThumb: true,
+          currentPagerPosition: 'middle',
+          thumbWidth: 100,
+          thumbMargin: 5,
+
+
+          mobileSrc: false,
+          mobileSrcMaxWidth: 640,
+          swipeThreshold: 50,
+          enableTouch: true,
+          enableDrag: true,
+
+          vimeoColor: 'CCCCCC',
+          videoAutoplay: true,
+          videoMaxWidth: '855px',
+
+          dynamic: false,
+          dynamicEl: [],
+
+          // Callbacks el = current plugin
+          onOpen        : function(el) {}, // Executes immediately after the gallery is loaded.
+          onSlideBefore : function(el) {}, // Executes immediately before each transition.
+          onSlideAfter  : function(el) {}, // Executes immediately after each transition.
+          onSlideNext   : function(el) {}, // Executes immediately before each "Next" transition.
+          onSlidePrev   : function(el) {}, // Executes immediately before each "Prev" transition.
+          onBeforeClose : function(el) {}, // Executes immediately before the start of the close process.
+          onCloseAfter  : function(el) {}, // Executes immediately once lightGallery is closed.
+
+        });
+    });
+</script>

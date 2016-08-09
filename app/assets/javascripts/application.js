@@ -22,6 +22,7 @@
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr.js
 //= require charges
 //= require jquery.scrollTo
+//= require light-gallery
 //= require_tree .
 
 $(document).on("page:load", function(){

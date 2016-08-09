@@ -7,6 +7,12 @@ GIT
       js_regex (~> 1.0, >= 1.0.9)
       rails (>= 4.0.0, < 4.3.0)
 
+GIT
+  remote: https://github.com/stNicolaas/light-gallery-rails.git
+  revision: 97d892d0b4637ddae264514e2a44372853ff6f83
+  specs:
+    light_gallery_rails (1.1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -247,6 +253,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-scrollto-rails
+  light_gallery_rails!
   pg (= 0.17.1)
   rails (= 4.2.2)
   rails-assets-tether (>= 1.1.0)

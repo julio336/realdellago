@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *= require bootstrap-datepicker3
+ *= require light-gallery
  */
 
 @import "bootstrap-sprockets";
@@ -19,6 +20,20 @@ body {
     padding:0!important; 
     margin:0 !important;
 }
+
+#gallery_list{
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  z-index: 1;
+}
+
+#gallery_list:hover {
+    cursor: pointer; 
+    cursor: hand;
+    opacity: .5;
+}
+
 
 .btn-circle {
     width: 50px;
@@ -122,6 +137,10 @@ footer{
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(148, 69, 60);
+}
+
+.nav > li > a {
+  color: rgb(148, 69, 60);
 }
 
 .caption {
