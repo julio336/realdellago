@@ -23,14 +23,15 @@
           <%= link_to "RESERVA AHORA", "#", class: "btn btn-danger", style: "color:white" %>
         </li>
         <% if user_signed_in? %>
-          <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ADMIN</a>
-            <div class="dropdown-menu">
-              <strong class="dropdown-item"><%= current_user.email %></strong>
-                <%= link_to 'Admin', "/users/index", class:"dropdown-item" %>
-                <%= link_to 'Editar perfil', edit_user_registration_path, class:"dropdown-item" %>
-                <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ADMIN <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><%= current_user.email %></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to 'Admin', "/users/index", class:"dropdown-item" %></li>
+              <li><%= link_to 'Editar perfil', edit_user_registration_path, class:"dropdown-item" %></li>
+              <li><%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+            </ul>
           </li>
         <% end %>
       </ul>
