@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :rooms
+  resources :charges_steps
   devise_for :users
   get 'charges/index'
 

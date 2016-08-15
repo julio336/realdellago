@@ -54,6 +54,9 @@ gem 'rb-readline'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# gem 'Wicked form'
+gem 'wicked'
+
 gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
 
 group :development, :test do

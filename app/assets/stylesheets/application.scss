@@ -21,6 +21,11 @@ body {
     margin:0 !important;
 }
 
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #d9534f;
+}
+
 #gallery_list{
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
@@ -157,7 +162,7 @@ footer{
     width: 27px;
     height: 23px;
     padding: 0px;
-    margin: 40px 0px 0px -15px;
+    margin: 30px 0px 0px -15px;
     display: block;
     text-indent: -2000px;
     overflow: hidden;
@@ -212,7 +217,7 @@ footer{
   top: 0;
   left: 0;
   min-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .carousel-inner > .item > img {
@@ -220,7 +225,7 @@ footer{
   top: 0;
   left: 0;
   min-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .carousel-indicators {
@@ -236,7 +241,7 @@ footer{
 }
 
 .carousel .item {
-  height: 580px;
+  height: 50rem;
   background-color: #777;
 }
 

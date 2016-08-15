@@ -20,7 +20,8 @@
           <%= link_to "HABITACIONES", "/habitaciones", class: "nav-link" %>
          </li>
         <li class="nav-item">
-          <%= link_to "RESERVA AHORA", "#", class: "btn btn-danger", style: "color:white" %>
+          <%= link_to '<i class="glyphicon glyphicon-calendar"></i> RESERVA AHORA'.html_safe, "#", class: 'btn btn-danger', style: "color:white" %>
+
         </li>
         <% if user_signed_in? %>
           <li class="dropdown">
