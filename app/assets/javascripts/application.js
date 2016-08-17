@@ -13,6 +13,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require rails.validations
+//= require rails.validations.simple_form 
 //= require tether
 //= require jquery_ujs
 //= require turbolinks

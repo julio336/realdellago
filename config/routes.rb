@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :rooms
   resources :charges_steps
   devise_for :users
+  resources "contacts", only: [:new, :create]
+
   get 'charges/index'
 
   post 'charges/create'

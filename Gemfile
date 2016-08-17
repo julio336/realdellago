@@ -30,14 +30,18 @@ gem 'conekta'
 #gem devise to authenticate users
 gem 'devise'
 
-#gem client side validations
-gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'	
 
 #twitter newsfeed
 gem 'twitter'
+
+#form
+gem 'mail_form'
+gem 'simple_form'
+gem 'client_side_validations'
+gem 'client_side_validations-simple_form'
+
 
 #scroll to plugin
 gem "jquery-scrollto-rails"
