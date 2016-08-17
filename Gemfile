@@ -63,6 +63,9 @@ gem 'wicked'
 
 gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
 
+#gem embeded pass
+gem "figaro"
+
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
